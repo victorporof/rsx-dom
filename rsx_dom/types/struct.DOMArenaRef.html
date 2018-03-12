@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `DOMArenaRef` struct in crate `rsx_dom`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, DOMArenaRef">
+
+    <title>rsx_dom::types::DOMArenaRef - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc struct">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'>Struct DOMArenaRef</p><div class="block items"><a class="sidebar-title" href="#methods">Methods</a><div class="sidebar-links"><a href="#method.get">get</a><a href="#method.id">id</a><a href="#method.parent_id">parent_id</a><a href="#method.parent">parent</a><a href="#method.prev_sibling_id">prev_sibling_id</a><a href="#method.prev_sibling">prev_sibling</a><a href="#method.next_sibling_id">next_sibling_id</a><a href="#method.next_sibling">next_sibling</a><a href="#method.first_child_id">first_child_id</a><a href="#method.first_child">first_child</a><a href="#method.last_child_id">last_child_id</a><a href="#method.last_child">last_child</a><a href="#method.sibling_ids">sibling_ids</a><a href="#method.edge_ids">edge_ids</a><a href="#method.children_iter">children_iter</a><a href="#method.descendants_iter">descendants_iter</a><a href="#method.traverse_iter">traverse_iter</a></div><a class="sidebar-title" href="#deref-methods">Methods from Deref&lt;Target=DOMNode<E, S, C, L>&gt;</a><div class="sidebar-links"><a href="#method.shadow_dom">shadow_dom</a></div><a class="sidebar-title" href="#implementations">Trait Implementations</a><div class="sidebar-links"><a href="#impl-Debug">Debug</a><a href="#impl-PartialEq">PartialEq</a><a href="#impl-From%3CRef%3C%27a%2C%20DOMNode%3CE%2C%20S%2C%20C%2C%20L%3E%3E%3E">From&lt;Ref&lt;&#39;a, DOMNode&lt;E, S, C, L&gt;&gt;&gt;</a><a href="#impl-Deref">Deref</a><a href="#impl-Into%3CDOMArenaRef%3C%27a%2C%20E%2C%20S%2C%20C%2C%20L%3E%3E">Into&lt;DOMArenaRef&lt;&#39;a, E, S, C, L&gt;&gt;</a></div></div><p class='location'><a href='../index.html'>rsx_dom</a>::<wbr><a href='index.html'>types</a></p><script>window.sidebarCurrent = {name: 'DOMArenaRef', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Struct <a href='../index.html'>rsx_dom</a>::<wbr><a href='index.html'>types</a>::<wbr><a class="struct" href=''>DOMArenaRef</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../../src/rsx_dom/graph/node_ref.rs.html#19-21' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct DOMArenaRef&lt;'a, E:&nbsp;'a, S:&nbsp;'a, C:&nbsp;'a, L:&nbsp;'a&gt; { /* fields omitted */ }</pre>
+                    <h2 id='methods' class='small-section-header'>
+                      Methods<a href='#methods' class='anchor'></a>
+                    </h2>
+                <h3 id='impl' class='impl'><span class='in-band'><code>impl&lt;'a, E, S, C, L&gt; <a class="struct" href="../../rsx_dom/types/struct.DOMArenaRef.html" title="struct rsx_dom::types::DOMArenaRef">DOMArenaRef</a>&lt;'a, E, S, C, L&gt;</code><a href='#impl' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rsx_dom/graph/node_ref.rs.html#37-113' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.get' class="method"><span id='get.v' class='invisible'><code>pub fn <a href='#method.get' class='fnname'>get</a>(&amp;self, id: <a class="type" href="../../rsx_dom/types/type.DOMNodeId.html" title="type rsx_dom::types::DOMNodeId">DOMNodeId</a>&lt;E, S, C, L&gt;) -&gt; <a class="struct" href="../../rsx_dom/types/struct.DOMArenaRef.html" title="struct rsx_dom::types::DOMArenaRef">DOMArenaRef</a>&lt;'a, E, S, C, L&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rsx_dom/graph/node_ref.rs.html#46-48' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.id' class="method"><span id='id.v' class='invisible'><code>pub fn <a href='#method.id' class='fnname'>id</a>(&amp;self) -&gt; <a class="type" href="../../rsx_dom/types/type.DOMNodeId.html" title="type rsx_dom::types::DOMNodeId">DOMNodeId</a>&lt;E, S, C, L&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rsx_dom/graph/node_ref.rs.html#50-52' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.parent_id' class="method"><span id='parent_id.v' class='invisible'><code>pub fn <a href='#method.parent_id' class='fnname'>parent_id</a>(&amp;self) -&gt; <a class="enum" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html" title="enum core::option::Option">Option</a>&lt;<a class="type" href="../../rsx_dom/types/type.DOMNodeId.html" title="type rsx_dom::types::DOMNodeId">DOMNodeId</a>&lt;E, S, C, L&gt;&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rsx_dom/graph/node_ref.rs.html#54-56' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.parent' class="method"><span id='parent.v' class='invisible'><code>pub fn <a href='#method.parent' class='fnname'>parent</a>(&amp;self) -&gt; <a class="enum" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html" title="enum core::option::Option">Option</a>&lt;<a class="struct" href="../../rsx_dom/types/struct.DOMArenaRef.html" title="struct rsx_dom::types::DOMArenaRef">DOMArenaRef</a>&lt;'a, E, S, C, L&gt;&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rsx_dom/graph/node_ref.rs.html#58-60' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.prev_sibling_id' class="method"><span id='prev_sibling_id.v' class='invisible'><code>pub fn <a href='#method.prev_sibling_id' class='fnname'>prev_sibling_id</a>(&amp;self) -&gt; <a class="enum" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html" title="enum core::option::Option">Option</a>&lt;<a class="type" href="../../rsx_dom/types/type.DOMNodeId.html" title="type rsx_dom::types::DOMNodeId">DOMNodeId</a>&lt;E, S, C, L&gt;&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rsx_dom/graph/node_ref.rs.html#62-64' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.prev_sibling' class="method"><span id='prev_sibling.v' class='invisible'><code>pub fn <a href='#method.prev_sibling' class='fnname'>prev_sibling</a>(&amp;self) -&gt; <a class="enum" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html" title="enum core::option::Option">Option</a>&lt;<a class="struct" href="../../rsx_dom/types/struct.DOMArenaRef.html" title="struct rsx_dom::types::DOMArenaRef">DOMArenaRef</a>&lt;'a, E, S, C, L&gt;&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rsx_dom/graph/node_ref.rs.html#66-68' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.next_sibling_id' class="method"><span id='next_sibling_id.v' class='invisible'><code>pub fn <a href='#method.next_sibling_id' class='fnname'>next_sibling_id</a>(&amp;self) -&gt; <a class="enum" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html" title="enum core::option::Option">Option</a>&lt;<a class="type" href="../../rsx_dom/types/type.DOMNodeId.html" title="type rsx_dom::types::DOMNodeId">DOMNodeId</a>&lt;E, S, C, L&gt;&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rsx_dom/graph/node_ref.rs.html#70-72' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.next_sibling' class="method"><span id='next_sibling.v' class='invisible'><code>pub fn <a href='#method.next_sibling' class='fnname'>next_sibling</a>(&amp;self) -&gt; <a class="enum" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html" title="enum core::option::Option">Option</a>&lt;<a class="struct" href="../../rsx_dom/types/struct.DOMArenaRef.html" title="struct rsx_dom::types::DOMArenaRef">DOMArenaRef</a>&lt;'a, E, S, C, L&gt;&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rsx_dom/graph/node_ref.rs.html#74-76' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.first_child_id' class="method"><span id='first_child_id.v' class='invisible'><code>pub fn <a href='#method.first_child_id' class='fnname'>first_child_id</a>(&amp;self) -&gt; <a class="enum" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html" title="enum core::option::Option">Option</a>&lt;<a class="type" href="../../rsx_dom/types/type.DOMNodeId.html" title="type rsx_dom::types::DOMNodeId">DOMNodeId</a>&lt;E, S, C, L&gt;&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rsx_dom/graph/node_ref.rs.html#78-80' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.first_child' class="method"><span id='first_child.v' class='invisible'><code>pub fn <a href='#method.first_child' class='fnname'>first_child</a>(&amp;self) -&gt; <a class="enum" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html" title="enum core::option::Option">Option</a>&lt;<a class="struct" href="../../rsx_dom/types/struct.DOMArenaRef.html" title="struct rsx_dom::types::DOMArenaRef">DOMArenaRef</a>&lt;'a, E, S, C, L&gt;&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rsx_dom/graph/node_ref.rs.html#82-84' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.last_child_id' class="method"><span id='last_child_id.v' class='invisible'><code>pub fn <a href='#method.last_child_id' class='fnname'>last_child_id</a>(&amp;self) -&gt; <a class="enum" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html" title="enum core::option::Option">Option</a>&lt;<a class="type" href="../../rsx_dom/types/type.DOMNodeId.html" title="type rsx_dom::types::DOMNodeId">DOMNodeId</a>&lt;E, S, C, L&gt;&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rsx_dom/graph/node_ref.rs.html#86-88' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.last_child' class="method"><span id='last_child.v' class='invisible'><code>pub fn <a href='#method.last_child' class='fnname'>last_child</a>(&amp;self) -&gt; <a class="enum" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html" title="enum core::option::Option">Option</a>&lt;<a class="struct" href="../../rsx_dom/types/struct.DOMArenaRef.html" title="struct rsx_dom::types::DOMArenaRef">DOMArenaRef</a>&lt;'a, E, S, C, L&gt;&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rsx_dom/graph/node_ref.rs.html#90-92' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.sibling_ids' class="method"><span id='sibling_ids.v' class='invisible'><code>pub fn <a href='#method.sibling_ids' class='fnname'>sibling_ids</a>(&amp;self) -&gt; <a class="type" href="../../rsx_dom/types/type.DOMNodeSiblingIds.html" title="type rsx_dom::types::DOMNodeSiblingIds">DOMNodeSiblingIds</a>&lt;E, S, C, L&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rsx_dom/graph/node_ref.rs.html#94-96' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.edge_ids' class="method"><span id='edge_ids.v' class='invisible'><code>pub fn <a href='#method.edge_ids' class='fnname'>edge_ids</a>(&amp;self) -&gt; <a class="type" href="../../rsx_dom/types/type.DOMNodeEdgeIds.html" title="type rsx_dom::types::DOMNodeEdgeIds">DOMNodeEdgeIds</a>&lt;E, S, C, L&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rsx_dom/graph/node_ref.rs.html#98-100' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.children_iter' class="method"><span id='children_iter.v' class='invisible'><code>pub fn <a href='#method.children_iter' class='fnname'>children_iter</a>(&amp;self) -&gt; impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/iter/iterator/trait.Iterator.html" title="trait core::iter::iterator::Iterator">Iterator</a>&lt;Item = &amp;'a <a class="struct" href="../../rsx_dom/types/struct.DOMNode.html" title="struct rsx_dom::types::DOMNode">DOMNode</a>&lt;E, S, C, L&gt;&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rsx_dom/graph/node_ref.rs.html#102-104' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.descendants_iter' class="method"><span id='descendants_iter.v' class='invisible'><code>pub fn <a href='#method.descendants_iter' class='fnname'>descendants_iter</a>(&amp;self) -&gt; impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/iter/iterator/trait.Iterator.html" title="trait core::iter::iterator::Iterator">Iterator</a>&lt;Item = &amp;'a <a class="struct" href="../../rsx_dom/types/struct.DOMNode.html" title="struct rsx_dom::types::DOMNode">DOMNode</a>&lt;E, S, C, L&gt;&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rsx_dom/graph/node_ref.rs.html#106-108' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.traverse_iter' class="method"><span id='traverse_iter.v' class='invisible'><code>pub fn <a href='#method.traverse_iter' class='fnname'>traverse_iter</a>(&amp;self) -&gt; impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/iter/iterator/trait.Iterator.html" title="trait core::iter::iterator::Iterator">Iterator</a>&lt;Item = &amp;'a <a class="struct" href="../../rsx_dom/types/struct.DOMNode.html" title="struct rsx_dom::types::DOMNode">DOMNode</a>&lt;E, S, C, L&gt;&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rsx_dom/graph/node_ref.rs.html#110-112' title='goto source code'>[src]</a></span></h4>
+</div>
+                    <h2 id='deref-methods' class='small-section-header'>
+                      Methods from <a class="trait" href="https://doc.rust-lang.org/nightly/core/ops/deref/trait.Deref.html" title="trait core::ops::deref::Deref">Deref</a>&lt;Target = <a class="struct" href="../../rsx_dom/types/struct.DOMNode.html" title="struct rsx_dom::types::DOMNode">DOMNode</a>&lt;E, S, C, L&gt;&gt;<a href='#deref-methods' class='anchor'></a>
+                    </h2>
+                <div class='impl-items'><h4 id='method.shadow_dom' class="method"><span id='shadow_dom.v' class='invisible'><code>pub fn <a href='#method.shadow_dom' class='fnname'>shadow_dom</a>(self) -&gt; <a class="struct" href="../../rsx_dom/types/struct.DOMTree.html" title="struct rsx_dom::types::DOMTree">DOMTree</a>&lt;E, S, C, L&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rsx_dom/types.rs.html#73-78' title='goto source code'>[src]</a></span></h4>
+</div><div class='impl-items'></div>
+            <h2 id='implementations' class='small-section-header'>
+              Trait Implementations<a href='#implementations' class='anchor'></a>
+            </h2>
+        <h3 id='impl-Debug' class='impl'><span class='in-band'><code>impl&lt;'a, E:&nbsp;<a class="trait" href="https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html" title="trait core::fmt::Debug">Debug</a> + 'a, S:&nbsp;<a class="trait" href="https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html" title="trait core::fmt::Debug">Debug</a> + 'a, C:&nbsp;<a class="trait" href="https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html" title="trait core::fmt::Debug">Debug</a> + 'a, L:&nbsp;<a class="trait" href="https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html" title="trait core::fmt::Debug">Debug</a> + 'a&gt; <a class="trait" href="https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html" title="trait core::fmt::Debug">Debug</a> for <a class="struct" href="../../rsx_dom/types/struct.DOMArenaRef.html" title="struct rsx_dom::types::DOMArenaRef">DOMArenaRef</a>&lt;'a, E, S, C, L&gt;</code><a href='#impl-Debug' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rsx_dom/graph/node_ref.rs.html#18' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class="method"><span id='fmt.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class="struct" href="https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html" title="struct core::fmt::Formatter">Formatter</a>) -&gt; <a class="type" href="https://doc.rust-lang.org/nightly/core/fmt/type.Result.html" title="type core::fmt::Result">Result</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rsx_dom/graph/node_ref.rs.html#18' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Formats the value using the given formatter. <a href="https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt">Read more</a></p>
+</div></div><h3 id='impl-PartialEq' class='impl'><span class='in-band'><code>impl&lt;'a, E:&nbsp;<a class="trait" href="https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html" title="trait core::cmp::PartialEq">PartialEq</a> + 'a, S:&nbsp;<a class="trait" href="https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html" title="trait core::cmp::PartialEq">PartialEq</a> + 'a, C:&nbsp;<a class="trait" href="https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html" title="trait core::cmp::PartialEq">PartialEq</a> + 'a, L:&nbsp;<a class="trait" href="https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html" title="trait core::cmp::PartialEq">PartialEq</a> + 'a&gt; <a class="trait" href="https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html" title="trait core::cmp::PartialEq">PartialEq</a> for <a class="struct" href="../../rsx_dom/types/struct.DOMArenaRef.html" title="struct rsx_dom::types::DOMArenaRef">DOMArenaRef</a>&lt;'a, E, S, C, L&gt;</code><a href='#impl-PartialEq' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rsx_dom/graph/node_ref.rs.html#18' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.eq' class="method"><span id='eq.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#tymethod.eq' class='fnname'>eq</a>(&amp;self, __arg_0: &amp;<a class="struct" href="../../rsx_dom/types/struct.DOMArenaRef.html" title="struct rsx_dom::types::DOMArenaRef">DOMArenaRef</a>&lt;'a, E, S, C, L&gt;) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rsx_dom/graph/node_ref.rs.html#18' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>This method tests for <code>self</code> and <code>other</code> values to be equal, and is used by <code>==</code>. <a href="https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#tymethod.eq">Read more</a></p>
+</div><h4 id='method.ne' class="method"><span id='ne.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#method.ne' class='fnname'>ne</a>(&amp;self, __arg_0: &amp;<a class="struct" href="../../rsx_dom/types/struct.DOMArenaRef.html" title="struct rsx_dom::types::DOMArenaRef">DOMArenaRef</a>&lt;'a, E, S, C, L&gt;) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rsx_dom/graph/node_ref.rs.html#18' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>This method tests for <code>!=</code>.</p>
+</div></div><h3 id='impl-From%3CRef%3C%27a%2C%20DOMNode%3CE%2C%20S%2C%20C%2C%20L%3E%3E%3E' class='impl'><span class='in-band'><code>impl&lt;'a, E, S, C, L&gt; <a class="trait" href="https://doc.rust-lang.org/nightly/core/convert/trait.From.html" title="trait core::convert::From">From</a>&lt;<a class="struct" href="../../rsx_tree/node_ref/struct.Ref.html" title="struct rsx_tree::node_ref::Ref">Ref</a>&lt;'a, <a class="struct" href="../../rsx_dom/types/struct.DOMNode.html" title="struct rsx_dom::types::DOMNode">DOMNode</a>&lt;E, S, C, L&gt;&gt;&gt; for <a class="struct" href="../../rsx_dom/types/struct.DOMArenaRef.html" title="struct rsx_dom::types::DOMArenaRef">DOMArenaRef</a>&lt;'a, E, S, C, L&gt;</code><a href='#impl-From%3CRef%3C%27a%2C%20DOMNode%3CE%2C%20S%2C%20C%2C%20L%3E%3E%3E' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rsx_dom/graph/node_ref.rs.html#23-27' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.from' class="method"><span id='from.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/convert/trait.From.html#tymethod.from' class='fnname'>from</a>(raw: <a class="struct" href="../../rsx_tree/node_ref/struct.Ref.html" title="struct rsx_tree::node_ref::Ref">Ref</a>&lt;'a, <a class="struct" href="../../rsx_dom/types/struct.DOMNode.html" title="struct rsx_dom::types::DOMNode">DOMNode</a>&lt;E, S, C, L&gt;&gt;) -&gt; Self</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rsx_dom/graph/node_ref.rs.html#24-26' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Performs the conversion.</p>
+</div></div><h3 id='impl-Deref' class='impl'><span class='in-band'><code>impl&lt;'a, E, S, C, L&gt; <a class="trait" href="https://doc.rust-lang.org/nightly/core/ops/deref/trait.Deref.html" title="trait core::ops::deref::Deref">Deref</a> for <a class="struct" href="../../rsx_dom/types/struct.DOMArenaRef.html" title="struct rsx_dom::types::DOMArenaRef">DOMArenaRef</a>&lt;'a, E, S, C, L&gt;</code><a href='#impl-Deref' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rsx_dom/graph/node_ref.rs.html#29-35' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='associatedtype.Target' class="type"><span id='Target.t' class='invisible'><code>type <a href='https://doc.rust-lang.org/nightly/core/ops/deref/trait.Deref.html#associatedtype.Target' class="type">Target</a> = <a class="struct" href="../../rsx_dom/types/struct.DOMNode.html" title="struct rsx_dom::types::DOMNode">DOMNode</a>&lt;E, S, C, L&gt;</code></span></h4>
+<div class='docblock'><p>The resulting type after dereferencing.</p>
+</div><h4 id='method.deref' class="method"><span id='deref.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/ops/deref/trait.Deref.html#tymethod.deref' class='fnname'>deref</a>(&amp;self) -&gt; &amp;Self::<a class="type" href="https://doc.rust-lang.org/nightly/core/ops/deref/trait.Deref.html#associatedtype.Target" title="type core::ops::deref::Deref::Target">Target</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rsx_dom/graph/node_ref.rs.html#32-34' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Dereferences the value.</p>
+</div></div><h3 id='impl-Into%3CDOMArenaRef%3C%27a%2C%20E%2C%20S%2C%20C%2C%20L%3E%3E' class='impl'><span class='in-band'><code>impl&lt;'a, E, S, C, L&gt; <a class="trait" href="https://doc.rust-lang.org/nightly/core/convert/trait.Into.html" title="trait core::convert::Into">Into</a>&lt;<a class="struct" href="../../rsx_dom/types/struct.DOMArenaRef.html" title="struct rsx_dom::types::DOMArenaRef">DOMArenaRef</a>&lt;'a, E, S, C, L&gt;&gt; for <a class="struct" href="../../rsx_dom/types/struct.DOMArenaRefMut.html" title="struct rsx_dom::types::DOMArenaRefMut">DOMArenaRefMut</a>&lt;'a, E, S, C, L&gt;</code><a href='#impl-Into%3CDOMArenaRef%3C%27a%2C%20E%2C%20S%2C%20C%2C%20L%3E%3E' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rsx_dom/graph/node_ref_mut.rs.html#30-34' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.into' class="method"><span id='into.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/convert/trait.Into.html#tymethod.into' class='fnname'>into</a>(self) -&gt; <a class="struct" href="../../rsx_dom/types/struct.DOMArenaRef.html" title="struct rsx_dom::types::DOMArenaRef">DOMArenaRef</a>&lt;'a, E, S, C, L&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rsx_dom/graph/node_ref_mut.rs.html#31-33' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Performs the conversion.</p>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>↑</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>↓</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>↹</dt>
+                    <dd>Switch tab</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt style="width:31px;">+ / -</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "rsx_dom";
+    </script>
+    <script src="../../main.js"></script>
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>
